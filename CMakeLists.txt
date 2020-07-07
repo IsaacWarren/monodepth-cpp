@@ -12,7 +12,9 @@ FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(Protobuf REQUIRED)
 FIND_PACKAGE(TensorFlow REQUIRED)
 
-set(EIGEN334_INCLUDE_DIRS /path/to/local/Eigen-3.3.4/local/include/eigen3) # If you decide to build the Eigen library locally, else use 'FIND_PACKAGE()' to locate your Eigen library
+FIND_PACKAGE(Eigen3 REQUIRED)
+
+#set(EIGEN334_INCLUDE_DIRS /path/to/local/Eigen-3.3.4/local/include/eigen3) # If you decide to build the Eigen library locally, else use 'FIND_PACKAGE()' to locate your Eigen library
 
 INCLUDE_DIRECTORIES(
   include
