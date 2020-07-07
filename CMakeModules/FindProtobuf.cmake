@@ -6,7 +6,7 @@ find_path(Protobuf_INCLUDE_DIR
         NAMES
         protobuf
         HINTS
-        /usr/local/include/google)
+        /usr/include/google)
 
 find_library(Protobuf_LIBRARY NAMES protobuf
         HINTS
