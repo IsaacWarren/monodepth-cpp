@@ -12,6 +12,7 @@ FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(Protobuf REQUIRED)
 FIND_PACKAGE(TensorFlow REQUIRED)
 
+
 SET(EIGEN334_INCLUDE_DIRS /usr/include/eigen3/) # If you decide to build the Eigen library locally, else use 'FIND_PACKAGE()' to locate your Eigen library
 
 INCLUDE_DIRECTORIES(
@@ -20,6 +21,7 @@ INCLUDE_DIRECTORIES(
   ${OpenCV_INCLUDE_DIRS}
   ${PROTOBUF_INCLUDE_DIRS}
   ${TensorFlow_INCLUDE_DIRS}
+  /App/tensorflow/tensorflow/contrib/makefile/downloads/absl
 )
 
 # Create monodepth library
